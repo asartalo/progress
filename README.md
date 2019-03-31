@@ -1,24 +1,18 @@
-# README
+# Progress
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A dashboard for code metrics. For now, just code coverage.
 
-Things you may want to cover:
+## Dependencies
+- ruby version: 2.6.2
+- node version: v11.2
+- database: PostgreSQL
 
-* Ruby version
+## Local Development
 
-* System dependencies
+To start server run
 
-* Configuration
+```sh
+foreman start -f Procfile.dev-server
+```
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

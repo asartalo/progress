@@ -7,6 +7,7 @@ gem 'rails', '~> 5.2.3'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'webpacker'
+gem 'uglifier'
 gem 'react_on_rails', '11.2.2'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

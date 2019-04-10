@@ -11,6 +11,7 @@ gem 'uglifier'
 gem 'react_on_rails', '11.2.2'
 gem 'devise'
 gem 'slim-rails'
+gem 'rails_best_practices'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'

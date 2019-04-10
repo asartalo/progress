@@ -1,12 +1,12 @@
 import ReactOnRails from 'react-on-rails';
 import rujs from '@rails/ujs';
-import HelloWorldApp from '../bundles/HelloWorld/startup/HelloWorldApp';
+import MainApp from '../bundles/Main/MainApp';
 
 // Make sure rails-specific interactivity works
 rujs.start();
 
-// This is how react_on_rails can see the HelloWorld in the browser.
+// This is how react_on_rails can see the Main in the browser.
 ReactOnRails.register({
-  HelloWorldApp,
+  MainApp,
 });
 

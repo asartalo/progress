@@ -8,15 +8,20 @@ const Main = ({ name, updateName }) => (
     </h3>
     <hr />
     <form >
-      <label htmlFor="name">
-        Say hello to:
-      </label>
-      <input
-        id="name"
-        type="text"
-        value={name}
-        onChange={(e) => updateName(e.target.value)}
-      />
+      <div className="field">
+        <div className="control">
+          <label htmlFor="name">
+            Say hello to:
+          </label>
+          <input
+            className="input"
+            id="name"
+            type="text"
+            value={name}
+            onChange={(e) => updateName(e.target.value)}
+          />
+        </div>
+      </div>
     </form>
   </div>
 );

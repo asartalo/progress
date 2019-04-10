@@ -1,7 +1,9 @@
-h1 Dashboard
-- if user_signed_in?
-  p
-    = current_user.email
-  p
-    = link_to('Sign out', destroy_user_session_path, method: :delete)
-= react_component("MainApp", props: @hello_world_props, prerender: false)
+.container.is-fluid.columns
+  .column
+    h1.title Dashboard
+    - if user_signed_in?
+      p.subtitle
+        = current_user.email
+      p
+        = link_to('Sign out', destroy_user_session_path, method: :delete)
+    = react_component("MainApp", props: @hello_world_props, prerender: false)

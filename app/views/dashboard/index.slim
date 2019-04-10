@@ -1,0 +1,7 @@
+h1 Dashboard
+- if user_signed_in?
+  p
+    = current_user.email
+  p
+    = link_to('Sign out', destroy_user_session_path, method: :delete)
+= react_component("HelloWorldApp", props: @hello_world_props, prerender: false)

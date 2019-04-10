@@ -9,6 +9,8 @@ gem 'puma', '~> 3.11'
 gem 'webpacker'
 gem 'uglifier'
 gem 'react_on_rails', '11.2.2'
+gem 'devise'
+gem 'slim-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
@@ -37,6 +39,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'annotate'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'

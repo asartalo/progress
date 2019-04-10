@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
-  get 'hello_world', to: 'hello_world#index'
-  root 'hello_world#index'
+  devise_for :users, controllers: {
+    # remove this if you want to allow more users
+    registrations: "registrations"
+  }
+
+  get 'dashboard', to: 'dashboard#index'
+  root 'dashboard#index'
 end
